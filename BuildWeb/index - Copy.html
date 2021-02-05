@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | TimmyTheMoneyBadger</title>
+  </head>
+  <body style="text-align: left; margin: 0px">
+    <canvas id="unity-canvas" style="width: 865px; height: 614px; background: #231F20"></canvas>
+    <script src="Build/BuildWeb.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/BuildWeb.data",
+        frameworkUrl: "Build/BuildWeb.framework.js",
+        codeUrl: "Build/BuildWeb.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Kevin, Ruta and David",
+        productName: "TimmyTheMoneyBadger",
+        productVersion: "0.7",
+      });
+    </script>
+  </body>
+</html>
